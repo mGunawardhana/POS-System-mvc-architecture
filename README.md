@@ -1,5 +1,5 @@
 # POS-System
-semester final pos system using javafx , mysql (Athena Fruit Market System)
+Semester Final POS System using JavaFx , MySql (Athena Fruit Market System)
 
 <h3> System Login ----------------------------------------------------- </h3>
 
