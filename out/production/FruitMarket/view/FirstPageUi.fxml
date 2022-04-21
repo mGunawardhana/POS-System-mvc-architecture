@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="FPageContext" prefHeight="600.0" prefWidth="1088.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.FirstPageUIForm">
+   <children>
+      <ImageView fitHeight="600.0" fitWidth="651.0" layoutX="412.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/24622-min.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="570.0" layoutY="200.0" prefHeight="201.0" prefWidth="316.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <Label layoutX="147.0" layoutY="-1.0" text="to">
+               <font>
+                  <Font name="System Bold" size="21.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="52.0" text="Athena" textFill="#07e100">
+               <font>
+                  <Font name="System Bold" size="43.0" />
+               </font>
+            </Label>
+            <Label layoutX="34.0" layoutY="147.0" text="fruit market systems" textFill="#eb800e">
+               <font>
+                  <Font name="System Bold" size="28.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="665.0" layoutY="157.0" text="Welcome" textFill="#035cf5">
+         <font>
+            <Font name="System Bold" size="29.0" />
+         </font>
+      </Label>
+      <AnchorPane prefHeight="600.0" prefWidth="380.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <AnchorPane fx:id="FirstPageAnchorPaneContext" layoutX="12.0" layoutY="16.0" prefHeight="569.0" prefWidth="359.0" style="-fx-background-color: #05c46b; -fx-background-radius: 10;">
+               <children>
+                  <TextField fx:id="StartUpSystemName" layoutX="22.0" layoutY="265.0" onAction="#shiftNextOnAction" prefHeight="40.0" prefWidth="316.0" promptText="User Name" />
+                  <PasswordField fx:id="StartUpSystemPassword" layoutX="22.0" layoutY="322.0" prefHeight="40.0" prefWidth="316.0" promptText="Password" />
+                  <ImageView fitHeight="130.0" fitWidth="130.0" layoutX="115.0" layoutY="74.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/ic_usr.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="22.0" layoutY="222.0" text="Chartered owner - " textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="164.0" layoutY="222.0" prefHeight="25.0" prefWidth="146.0" text="mr. Gunawardhana">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <JFXButton buttonType="RAISED" layoutX="142.0" layoutY="377.0" onAction="#SystemStartUpOnAction" style="-fx-background-color: #ffffff;" text="Login">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </JFXButton>
+                  <Separator layoutX="22.0" layoutY="453.0" prefHeight="4.0" prefWidth="316.0" />
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="142.0" layoutY="474.0" onMouseClicked="#goToGoogle" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/google.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="298.0" layoutY="473.0" onMouseClicked="#goToFacebook" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/facebook.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="22.0" layoutY="480.0" text="Amazon Fresh" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="198.0" layoutY="481.0" prefHeight="25.0" prefWidth="95.0" text="Amazon FB" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="16.0" />
+                     </font>
+                  </Label>
+                  <Separator layoutX="22.0" layoutY="527.0" prefHeight="4.0" prefWidth="316.0" />
+                  <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="303.0" layoutY="270.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@../assets/Users_30px.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="lblHide" layoutX="303.0" layoutY="327.0" onMousePressed="#showPasswordOnMousePressed" onMouseReleased="#hidePasswordOnMousePressed" prefHeight="30.0" prefWidth="30.0">
+                     <graphic>
+                        <ImageView fitHeight="30.0" fitWidth="30.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/hide.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="545.0" text="Chartered business in Amazon Fresh ©">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="39.0" layoutY="14.0" text="Trusted Partner in Amazon">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="309.0" layoutY="226.0" pickOnBounds="true">
+                     <image>
+                        <Image url="@assets/check.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

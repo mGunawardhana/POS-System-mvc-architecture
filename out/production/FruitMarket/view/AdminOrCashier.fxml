@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="OwnerUnderCashier" prefHeight="569.0" prefWidth="359.0" style="-fx-background-color: #8fce00; -fx-background-radius: 8;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.AdminOrCashierController">
+   <children>
+      <AnchorPane layoutX="13.0" layoutY="20.0" prefHeight="258.0" prefWidth="333.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="117.0" layoutY="14.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/ic_usr.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="14.0" text="* Owner">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="OwnerTxt" layoutX="37.0" layoutY="134.0" onAction="#OwnerShiftOnAction" prefHeight="31.0" prefWidth="259.0" promptText="User Name" />
+            <PasswordField fx:id="PwdTxt" layoutX="37.0" layoutY="175.0" prefHeight="31.0" prefWidth="259.0" promptText="Password" />
+            <JFXButton layoutX="231.0" layoutY="215.0" onAction="#AdminSideLogin" style="-fx-background-color: #7bed9f;" text="Login" />
+            <ImageView fx:id="AdminImg" fitHeight="50.0" fitWidth="50.0" layoutX="263.0" layoutY="27.0" opacity="0.67" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/outline_lock_black_24dp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="13.0" layoutY="297.0" prefHeight="258.0" prefWidth="333.0" style="-fx-background-color: #ffffff; -fx-background-radius: 8;">
+         <children>
+            <ImageView fitHeight="100.0" fitWidth="100.0" layoutX="113.0" layoutY="13.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/avatar.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="14.0" layoutY="14.0" text="* Cashier">
+               <font>
+                  <Font name="System Bold" size="16.0" />
+               </font>
+            </Label>
+            <TextField fx:id="CashierUserNameTxt" layoutX="37.0" layoutY="134.0" onAction="#cashierIdOnAction" prefHeight="31.0" prefWidth="259.0" promptText="Cashier ID" />
+            <PasswordField fx:id="CashierPwdTxt" layoutX="38.0" layoutY="175.0" prefHeight="31.0" prefWidth="259.0" promptText="Password" />
+            <JFXButton layoutX="240.0" layoutY="212.0" onAction="#CashierSideLogin" style="-fx-background-color: #7bed9f;" text="Login" />
+            <ImageView fx:id="CashierImg" fitHeight="50.0" fitWidth="50.0" layoutX="262.0" layoutY="27.0" opacity="0.67" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/outline_lock_black_24dp.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

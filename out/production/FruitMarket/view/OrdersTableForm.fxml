@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #ffffff;" stylesheets="@../styles/1St.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrdersTableFormController">
+   <children>
+      <ImageView fitHeight="547.0" fitWidth="787.0" layoutX="11.0" layoutY="27.0" opacity="0.08" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/1910.i305.039.S.m005.c10.realistic%20milk%20yogurt%20berries-01-min.jpg" />
+         </image>
+      </ImageView>
+      <TableView fx:id="OrdersTbl" layoutX="26.0" layoutY="150.0" prefHeight="431.0" prefWidth="757.0">
+        <columns>
+          <TableColumn fx:id="orderIdCol" prefWidth="253.3" text="Order ID" />
+            <TableColumn fx:id="customerIdCol" prefWidth="253.3" text="Customer ID" />
+            <TableColumn fx:id="DateCol" prefWidth="253.3" text="Date" />
+            <TableColumn fx:id="TimeCol" prefWidth="253.3" text="Time" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <ImageView fitHeight="137.0" fitWidth="167.0" layoutX="616.0" layoutY="14.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/Fruit_cocktail_anim_vinograd.gif" />
+         </image>
+      </ImageView>
+      <Label layoutX="241.0" layoutY="14.0" text="Un-confirmed orders" textFill="#631eb2">
+         <font>
+            <Font name="Book Antiqua Bold" size="34.0" />
+         </font>
+      </Label>
+      <TextField fx:id="CustomerSearch" layoutX="26.0" layoutY="63.0" onAction="#save" promptText="Customer Search" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="187.0" layoutY="66.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/search.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

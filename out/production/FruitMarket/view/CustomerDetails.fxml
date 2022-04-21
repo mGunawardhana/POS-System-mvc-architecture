@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #95a5a6;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerDetailsFormController">
+   <children>
+      <TableView fx:id="TableContextFullViewSide" layoutX="13.0" layoutY="238.0" prefHeight="327.0" prefWidth="783.0" style="-fx-background-color: #ffffff;" stylesheets="@../styles/1St.css">
+         <columns>
+            <TableColumn fx:id="CustomerID" prefWidth="93.0" text="Id" />
+            <TableColumn fx:id="customerMrMrs" prefWidth="93.0" text="Title" />
+            <TableColumn fx:id="CustomerName" prefWidth="131.0" text="Customer Name" />
+            <TableColumn fx:id="customerAddress" prefWidth="118.0" text="Address" />
+            <TableColumn fx:id="customerCity" prefWidth="118.0" text="City" />
+            <TableColumn fx:id="customerDate" prefWidth="118.0" text="Date" />
+            <TableColumn fx:id="customerTime" prefWidth="118.0" text="Time" />
+         </columns>
+      </TableView>
+      <Label layoutX="303.0" layoutY="14.0" text="Customer View" textFill="#136b90">
+         <font>
+            <Font name="Bookman Old Style Bold" size="26.0" />
+         </font>
+      </Label>
+      <Separator layoutX="302.0" layoutY="44.0" prefHeight="5.0" prefWidth="204.0" />
+      <TextField fx:id="SearchId" layoutX="14.0" layoutY="50.0" onAction="#save" promptText="Search Id" style="-fx-background-radius: 10;" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="167.0" layoutY="53.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/search.png" />
+         </image>
+      </ImageView>
+      <TextField fx:id="searchMaleFemale" layoutX="229.0" layoutY="93.0" promptText="Male or Femlae" />
+      <TextField fx:id="SearchCity" layoutX="229.0" layoutY="195.0" promptText="City" />
+      <TextField fx:id="DateLoader" layoutX="553.0" layoutY="147.0" promptText="Date" />
+      <TextField fx:id="TimeLoader" layoutX="553.0" layoutY="195.0" promptText="Time" />
+      <TextField fx:id="SearchName" layoutX="229.0" layoutY="147.0" promptText="Customer Name" />
+      <TextField fx:id="SearchAddress" layoutX="553.0" layoutY="93.0" promptText="Address" />
+      <Label layoutX="452.0" layoutY="96.0" text="Address -">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="198.0" text="Time -">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="136.0" layoutY="150.0" text="Name - ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="463.0" layoutY="150.0" text="Date - ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="145.0" layoutY="198.0" text="City - ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="143.0" layoutY="96.0" text="Title - ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

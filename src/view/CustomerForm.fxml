@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerAp" prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #bdc3c7;" stylesheets="@../styles/1St.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerFormController">
+    <children>
+        <Rectangle arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="264.0" layoutX="14.0" layoutY="14.0" stroke="BLACK" strokeType="INSIDE" width="783.0" />
+        <JFXButton fx:id="CustomerSaveButton" buttonType="RAISED" layoutX="639.0" layoutY="68.0" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: #7bed9f;" text="Save" />
+        <JFXButton buttonType="RAISED" layoutX="639.0" layoutY="123.0" onAction="#UpdateBtnOnAction" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: #eccc68;" text="Update" />
+        <JFXButton buttonType="RAISED" layoutX="639.0" layoutY="179.0" onAction="#DeleteBtnOnAction" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: #ff3838;" text="Delete" />
+        <TableView fx:id="TableContextFull" layoutX="14.0" layoutY="291.0" prefHeight="302.0" prefWidth="783.0" style="-fx-background-color: #ffffff;">
+            <columns>
+                <TableColumn fx:id="id" prefWidth="93.0" text="Id" />
+                <TableColumn fx:id="mrMrs" prefWidth="93.0" text="mr/mrs" />
+                <TableColumn fx:id="Customer_Name" prefWidth="131.0" text="Customer Name" />
+                <TableColumn fx:id="Address" prefWidth="118.0" text="Address" />
+                <TableColumn fx:id="City" prefWidth="118.0" text="City" />
+                <TableColumn fx:id="Province" prefWidth="118.0" text="Province" />
+                <TableColumn fx:id="PostalCode" prefWidth="118.0" text="PostalCode" />
+            </columns>
+        </TableView>
+      <AnchorPane layoutX="32.0" layoutY="50.0" prefHeight="47.0" prefWidth="252.0" style="-fx-background-radius: 8;" styleClass="textPane1">
+         <children>
+              <TextField fx:id="CustomerID" layoutX="4.0" layoutY="6.0" onAction="#save" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="39.0" prefWidth="244.0" promptText="Customer Id" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="32.0" layoutY="119.0" prefHeight="47.0" prefWidth="252.0" style="-fx-background-radius: 8;" styleClass="textPane1">
+         <children>
+              <TextField fx:id="CustomerAddress" layoutX="4.0" layoutY="4.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="39.0" prefWidth="244.0" promptText="Customer Address" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="32.0" layoutY="179.0" prefHeight="47.0" prefWidth="252.0" style="-fx-background-radius: 8;" styleClass="textPane1">
+         <children>
+              <TextField fx:id="CustomerProvince" layoutX="4.0" layoutY="5.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="39.0" prefWidth="244.0" promptText="Customer Province" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="317.0" layoutY="180.0" prefHeight="47.0" prefWidth="302.0" style="-fx-background-radius: 8;" styleClass="textPane1">
+         <children>
+              <TextField fx:id="CustomerPostalCode" layoutX="8.0" layoutY="4.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="39.0" prefWidth="287.0" promptText="Customer Postal Code" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="8.0" layoutY="-6.0" styleClass="textLabel" text="Customer Postal Code" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="406.0" layoutY="51.0" prefHeight="39.0" prefWidth="216.0" style="-fx-background-radius: 8;" styleClass="textPane1">
+         <children>
+              <TextField fx:id="CustomerName" layoutX="6.0" layoutY="5.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="39.0" prefWidth="204.0" promptText="Customer Name" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="317.0" layoutY="119.0" prefHeight="48.0" prefWidth="302.0" style="-fx-background-radius: 8;" styleClass="textPane1">
+         <children>
+              <TextField fx:id="CustomerCity" layoutX="6.0" layoutY="5.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="39.0" prefWidth="267.0" promptText="Customer City" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="6.0" layoutY="-10.0" styleClass="textLabel" text="Customer City" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="317.0" layoutY="52.0" prefHeight="47.0" prefWidth="79.0" style="-fx-background-radius: 8;" styleClass="textPane1">
+         <children>
+              <TextField fx:id="mrMrsBtn" layoutX="6.0" layoutY="4.0" onKeyReleased="#textFields_Key_Released_Customer" prefHeight="39.0" prefWidth="71.0" promptText="mr/mrs" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="7.0" layoutY="-11.0" styleClass="textLabel" text="Title" />
+         </children>
+      </AnchorPane>
+      <Label fx:id="DateLbl" layoutX="475.0" layoutY="241.0" prefHeight="21.0" prefWidth="124.0">
+         <font>
+            <Font size="17.0" />
+         </font></Label>
+      <Label fx:id="TimeLbl" layoutX="643.0" layoutY="239.0" prefHeight="25.0" prefWidth="110.0">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Label>
+      <Label layoutX="40.0" layoutY="39.0" styleClass="textLabel" text="Customer ID" />
+      <Label layoutX="416.0" layoutY="41.0" styleClass="textLabel" text="Customer Name" />
+      <Label layoutX="40.0" layoutY="109.0" styleClass="textLabel" text="Customer Address" />
+      <Label layoutX="40.0" layoutY="169.0" styleClass="textLabel" text="Customer Province" />
+    </children>
+</AnchorPane>

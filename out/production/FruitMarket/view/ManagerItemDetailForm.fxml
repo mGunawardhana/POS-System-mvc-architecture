@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ManagerItemDetailContext" prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #ffffff;" stylesheets="@../styles/1St.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ManagerItemDetailFormController">
+   <children>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" height="245.0" layoutX="24.0" layoutY="24.0" opacity="0.0" stroke="BLACK" strokeType="INSIDE" width="769.0" />
+      <ImageView fitHeight="578.0" fitWidth="800.0" layoutX="8.0" layoutY="11.0" opacity="0.55" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/1910.i305.039.S.m005.c10.realistic%20milk%20yogurt%20berries-01-min.jpg" />
+         </image>
+      </ImageView>
+      <JFXButton fx:id="SaveButton" buttonType="RAISED" layoutX="649.0" layoutY="78.0" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: #7bed9f;" text="Save" />
+      <JFXButton buttonType="RAISED" layoutX="649.0" layoutY="133.0" onAction="#UpdateButtonOnAction" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: #eccc68;" text="Update" />
+      <JFXButton buttonType="RAISED" layoutX="649.0" layoutY="189.0" onAction="#DeleteBtnOnAction" prefHeight="39.0" prefWidth="136.0" style="-fx-background-color: #ff3838;" text="Delete" />
+      <TableView fx:id="FullTable" layoutX="20.0" layoutY="243.0" prefHeight="347.0" prefWidth="783.0" style="-fx-background-color: #ffffff;">
+        <columns>
+          <TableColumn fx:id="ItemTableCol" prefWidth="123.0" text="Item Code" />
+            <TableColumn fx:id="DescriptionCol" prefWidth="74.0" text="Description" />
+            <TableColumn fx:id="PackSizeCol" prefWidth="239.0" text="Pack Size" />
+            <TableColumn fx:id="UnitPriceCol" prefWidth="157.0" text="Unit Price" />
+            <TableColumn fx:id="QtyOnHandCol" prefWidth="157.0" text="Qty On Hand (kg)" />
+            <TableColumn fx:id="dateCol" prefWidth="157.0" text="Date" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Label fx:id="dateLabel" layoutX="662.0" layoutY="24.0" prefHeight="21.0" prefWidth="110.0">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font></Label>
+      <Label fx:id="TimeLabel" layoutX="684.0" layoutY="45.0" prefHeight="21.0" prefWidth="88.0" />
+      <AnchorPane layoutX="46.0" layoutY="55.0" prefHeight="39.0" prefWidth="256.0" styleClass="textPane1">
+         <children>
+            <TextField fx:id="ItemCode" layoutX="6.0" layoutY="4.0" onAction="#save" onKeyReleased="#textFields_Key_Released_Item" prefHeight="39.0" prefWidth="244.0" promptText="Item Code" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="6.0" layoutY="-10.0" styleClass="textLabel" text="Item Code" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="332.0" layoutY="185.0" prefHeight="47.0" prefWidth="267.0" styleClass="textPane1">
+         <children>
+            <TextField fx:id="DateTxt" layoutX="9.0" layoutY="4.0" onKeyReleased="#textFields_Key_Released_Item" prefHeight="39.0" prefWidth="256.0" promptText="Date" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="12.0" layoutY="-6.0" styleClass="textLabel" text="Date" />
+         </children></AnchorPane>
+      <AnchorPane layoutX="46.0" layoutY="184.0" prefHeight="47.0" prefWidth="256.0" styleClass="textPane1">
+         <children>
+            <TextField fx:id="QtyOnHand" layoutX="6.0" layoutY="6.0" onKeyReleased="#textFields_Key_Released_Item" prefHeight="39.0" prefWidth="244.0" promptText="Qty On Hand" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="6.0" layoutY="-10.0" styleClass="textLabel" text="Qty On Hand" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="332.0" layoutY="55.0" prefHeight="47.0" prefWidth="267.0" styleClass="textPane1">
+         <children>
+            <TextField fx:id="Description" layoutX="7.0" layoutY="4.0" onKeyReleased="#textFields_Key_Released_Item" prefHeight="39.0" prefWidth="256.0" promptText="Description" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="10.0" layoutY="-8.0" styleClass="textLabel" text="Description" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="332.0" layoutY="123.0" prefHeight="48.0" prefWidth="267.0" styleClass="textPane1">
+         <children>
+            <TextField fx:id="UnitPrice" layoutX="7.0" layoutY="5.0" onKeyReleased="#textFields_Key_Released_Item" prefHeight="39.0" prefWidth="256.0" promptText="Unit Price" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="14.0" layoutY="-10.0" styleClass="textLabel" text="Unit Price" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="46.0" layoutY="124.0" prefHeight="39.0" prefWidth="256.0" styleClass="textPane1">
+         <children>
+            <TextField fx:id="Size" layoutX="6.0" layoutY="4.0" onAction="#save" onKeyReleased="#textFields_Key_Released_Item" prefHeight="39.0" prefWidth="244.0" promptText="Size" style="-fx-background-radius: 8; -fx-background-color: #ffffff;" />
+            <Label layoutX="14.0" layoutY="-6.0" styleClass="textLabel" text="Size" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

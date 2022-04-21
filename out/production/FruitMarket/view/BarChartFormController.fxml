@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.AreaChart?>
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="barChartAnchorPane" prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BarChartFormController">
+   <children>
+      <AreaChart fx:id="barChart" alternativeColumnFillVisible="true" layoutX="26.0" layoutY="24.0" legendSide="LEFT" prefHeight="457.0" prefWidth="641.0" style="-fx-background-color: #32ff7e;">
+        <xAxis>
+          <CategoryAxis side="BOTTOM" />
+        </xAxis>
+        <yAxis>
+          <NumberAxis side="LEFT" />
+        </yAxis>
+         <effect>
+            <ColorAdjust />
+         </effect>
+      </AreaChart>
+      <Label layoutX="266.0" layoutY="494.0" text="Customer Base Growth" textFill="#806106">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <Button layoutX="689.0" layoutY="73.0" mnemonicParsing="false" onAction="#clickOnAction" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #74b9ff;" text="Daily">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font></Button>
+      <Separator layoutX="672.0" layoutY="24.0" orientation="VERTICAL" prefHeight="327.0" prefWidth="7.0" />
+      <Button layoutX="689.0" layoutY="124.0" mnemonicParsing="false" onAction="#monthlyClickOnAction" style="-fx-background-color: #81ecec;" text="Monthly">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="689.0" layoutY="177.0" mnemonicParsing="false" onAction="#yearlyOnAction" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #55efc4;" text="Yearly">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+      <Button layoutX="689.0" layoutY="228.0" mnemonicParsing="false" onAction="#StoreItemsOnActions" prefHeight="37.0" prefWidth="86.0" style="-fx-background-color: #fff200;" text="Store">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

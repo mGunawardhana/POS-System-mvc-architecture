@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #d1ccc0;" stylesheets="@../styles/1St.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.OrderDetailsFormController">
+   <children>
+      <TableView fx:id="ODetailFormTbl" layoutX="8.0" layoutY="116.0" prefHeight="463.0" prefWidth="792.0" style="-fx-background-color: #ffffff;">
+        <columns>
+          <TableColumn fx:id="orderIdCol" prefWidth="158.4" text="Order ID" />
+            <TableColumn fx:id="ItemCodeCol" prefWidth="158.4" text="Item Code" />
+            <TableColumn fx:id="QtyCol" prefWidth="158.4" text="Qty (kg)" />
+            <TableColumn fx:id="DiscountCol" prefWidth="158.4" text="Discount" />
+            <TableColumn fx:id="PriceCol" prefWidth="158.4" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="235.0" layoutY="14.0" prefHeight="42.0" prefWidth="338.0" text="Confirmed or Payed Transactions" textFill="#25a112">
+         <font>
+            <Font name="Berlin Sans FB Demi Bold" size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="SearchOrderID" layoutX="22.0" layoutY="68.0" onAction="#search" style="-fx-background-radius: 10;" />
+      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="176.0" layoutY="71.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/search.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #f6e58d;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemDetails">
+   <children>
+      <TableView fx:id="FullTableStore" layoutX="12.0" layoutY="244.0" prefHeight="330.0" prefWidth="785.0" style="-fx-background-color: #ffffff;" stylesheets="@../styles/1St.css">
+         <columns>
+            <TableColumn fx:id="ItemTableColStore" prefWidth="157.0" text="Item Code" />
+            <TableColumn fx:id="DescriptionColStore" prefWidth="157.0" text="Description" />
+            <TableColumn fx:id="PackSizeColStore" prefWidth="157.0" text="Pack Size" />
+            <TableColumn fx:id="UnitPriceColStore" prefWidth="157.0" text="Unit Price" />
+            <TableColumn fx:id="QtyOnHandColStore" prefWidth="157.0" text="Qty On Hand (kg)" />
+         </columns>
+      </TableView>
+      <Label layoutX="316.0" layoutY="24.0" text="Items In Store" textFill="#009432">
+         <font>
+            <Font name="Bell MT Bold" size="28.0" />
+         </font>
+      </Label>
+      <TextField fx:id="searchItemInCode" layoutX="23.0" layoutY="59.0" onAction="#save" prefHeight="31.0" prefWidth="210.0" promptText="Search Item Code" style="-fx-background-radius: 10;" />
+      <TextField fx:id="UnitPrice" layoutX="259.0" layoutY="175.0" promptText="UnitPrice" />
+      <TextField fx:id="QtyOnHand" layoutX="565.0" layoutY="175.0" promptText="QtyOnHand" />
+      <TextField fx:id="Description" layoutX="259.0" layoutY="108.0" promptText="Description" />
+      <TextField fx:id="PackSize" layoutX="565.0" layoutY="108.0" promptText="PackSize" />
+      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="198.0" layoutY="62.0" pickOnBounds="true">
+         <image>
+            <Image url="@../assets/search.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="149.0" layoutY="111.0" text="Discription - ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="154.0" layoutY="178.0" text="Unit Price - ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="111.0" text="Pack Size - ">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+      <Label layoutX="464.0" layoutY="178.0" text="Qty o Hand -">
+         <font>
+            <Font name="System Bold" size="16.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="yearlyContext" prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.YearlyIncomeFormController">
+   <children>
+      <TableView fx:id="tblReport" layoutX="31.0" layoutY="76.0" opacity="0.71" prefHeight="448.0" prefWidth="746.0">
+         <columns>
+            <TableColumn fx:id="colYear" prefWidth="149.0" text="Yearly" />
+            <TableColumn fx:id="colOrderCount" prefWidth="229.0" text="Order Count" />
+            <TableColumn fx:id="colItemSoldQty" prefWidth="315.0" text="Sold (kg)" />
+            <TableColumn fx:id="colCost" prefWidth="242.0" text="Cost" />
+         </columns>
+         <stylesheets>
+            <URL value="@../styles/1St.css" />
+         </stylesheets>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="24.0" layoutY="545.0" mnemonicParsing="false" onAction="#backOnAction" style="-fx-background-color: #badc58;" text="Back" />
+   </children>
+</AnchorPane>

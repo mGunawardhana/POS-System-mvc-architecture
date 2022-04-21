@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="CustomerManagementFormContext" prefHeight="600.0" prefWidth="1088.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomerManagementFormController">
+   <children>
+      <Pane layoutX="14.0" layoutY="15.0" prefHeight="570.0" prefWidth="300.0" style="-fx-background-color: #8fce00; -fx-background-radius: 30;">
+         <children>
+            <AnchorPane fx:id="CustomersAp" layoutX="3.0" layoutY="70.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
+               <children>
+                  <Button layoutX="110.0" layoutY="7.0" mnemonicParsing="false" onAction="#CustomersOnAction" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" style="-fx-background-color: #13501e;" text="Customers" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="29.0" layoutY="8.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/896699.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="OrdersAp" layoutX="3.0" layoutY="145.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
+               <children>
+                  <Button layoutX="108.0" layoutY="7.0" mnemonicParsing="false" onAction="#OrdersOnAction" style="-fx-background-color: #13501e;" text="Orders" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="26.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="1.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/1250711%20(1).png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="OrderDetailsAp" layoutX="3.0" layoutY="221.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
+               <children>
+                  <Button layoutX="105.0" layoutY="8.0" mnemonicParsing="false" onAction="#OrderDetailsOnAction" style="-fx-background-color: #13501e;" text="Order Details" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="21.0" layoutY="8.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" layoutY="1.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/1221144.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="PlaceOrderAp" layoutX="3.0" layoutY="374.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
+               <children>
+                  <Button layoutX="104.0" layoutY="7.0" mnemonicParsing="false" onAction="#PlaceOrderOnAction" style="-fx-background-color: #13501e;" text="Place Order" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="20.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/1215080.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="LogOutAp" layoutX="3.0" layoutY="450.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
+               <children>
+                  <Button layoutX="107.0" layoutY="7.0" mnemonicParsing="false" onAction="#LogOutOnAction" style="-fx-background-color: #13501e;" text="LogOut" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="23.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="51.0" fitWidth="50.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/1057200.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <AnchorPane fx:id="OrderDetailsAp1" layoutX="3.0" layoutY="299.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
+               <children>
+                  <Button layoutX="105.0" layoutY="8.0" mnemonicParsing="false" onAction="#ItemDetailsOnAction" style="-fx-background-color: #13501e;" text="Item Details" textFill="#f2f2f2">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font>
+                  </Button>
+                  <AnchorPane layoutX="21.0" layoutY="8.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
+                     <children>
+                        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="5.0" layoutY="5.0" pickOnBounds="true">
+                           <image>
+                              <Image url="@../assets/round_category_black_24dp.png" />
+                           </image>
+                        </ImageView>
+                     </children>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <AnchorPane fx:id="allLoaderContext" layoutX="314.0" prefHeight="600.0" prefWidth="808.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <ImageView fitHeight="397.0" fitWidth="589.0" layoutX="110.0" layoutY="102.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" pickOnBounds="true">
+               <image>
+                  <Image url="@../assets/strawberry.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="timeLbl" layoutX="491.0" layoutY="40.0" prefHeight="50.0" prefWidth="279.0" textFill="#00bf06">
+               <font>
+                  <Font name="System Bold" size="34.0" />
+               </font>
+            </Label>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>
