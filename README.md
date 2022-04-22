@@ -30,7 +30,7 @@ you can calculate income like daily , monthly , yearly
 <br><h3> 🤟Another Options in POS  -----------------------------------------------------</h3><br>
   you can see your stocks using bar chart.<br>
   user friendly UI design.<br>
-  Special Grapgic content available.<br>
+  Special Graphic content available.<br>
   
   If you hava any bugs or issues , If you want to explain my code pleace contact me on :point_right: whats app - * 071 9043372  :hugs:
   
