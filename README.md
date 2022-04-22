@@ -34,4 +34,6 @@ you can calculate income like daily , monthly , yearly
   
   If you hava any bugs or issues , If you want to explain my code pleace contact me on :point_right: whats app - * 071 9043372  :hugs:
   
+  If you think my code is good pleace drop a star. 
+  
                                                                        *special noted - All my services are provided free of charge.
