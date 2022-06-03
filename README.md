@@ -1,6 +1,5 @@
 # POS-System
-Semester Final POS System using JavaFx , MySql (Athena Fruit Market System)
-
+[![Typing SVG](https://readme-typing-svg.herokuapp.com?size=20&duration=7000&width=850&lines=Semester+Final+POS+System+%7C+using+JavaFx+%2C+MySql+(Athena+Fruit+Market+System))](https://git.io/typing-svg)
 <h3> System Login ----------------------------------------------------- </h3>
 
 
