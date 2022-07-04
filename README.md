@@ -26,13 +26,18 @@ you can calculate income like daily , monthly , yearly
 
 ![Screenshot (762)](https://user-images.githubusercontent.com/100486080/164539520-1d1070e8-1e22-49fb-83cd-e29a773e0db6.png)
 
-<br><h3> 🤟Another Options in POS  -----------------------------------------------------</h3><br>
-  you can see your stocks using bar chart.<br>
-  user friendly UI design.<br>
-  Special Graphic content available.<br>
+<br><h3> 🤟Another Options in Athena Fruit Markset System -----------------------------------------------------</h3><br>
+
+**Used Languages - Java , CSS , SQL** <br>
+
+
+ * Used technology - JDBC <br>
+ * User friendly UI design.<br>
+ * Special Graphic content available.<br>
+ * Validation available in every detail catching form - using Reg x
   
-  If you hava any bugs or issues , If you want to explain my code pleace contact me on :point_right: whats app - * 071 9043372  :hugs:
-  
-  😋If you think my code is good pleace drop a star.😋
-  
-                                                                       *special noted - All my services are provided free of charge.
+If you hava any bugs or issues , If you want to explain my code or if you need help to develop your projects pleace contact me on :point_right: <br> whats app -* 071 9043372  :hugs:
+
+<h3> Result in this Project - A+ <h3/><br>
+   
+                                       😋 If you think my code is good pleace drop a star. 😋
