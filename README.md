@@ -38,6 +38,6 @@ you can calculate income like daily , monthly , yearly
   
 If you hava any bugs or issues , If you want to explain my code or if you need help to develop your projects pleace contact me on :point_right: <br> whats app -* 071 9043372  :hugs:
 
-<h3> Result in this Project - A+ <h3/><br>
+<h3> Result in this Project - A <h3/><br>
    
                                        😋 If you think my code is good pleace drop a star. 😋
