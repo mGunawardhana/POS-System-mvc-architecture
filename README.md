@@ -26,18 +26,34 @@ you can calculate income like daily , monthly , yearly
 
 ![Screenshot (762)](https://user-images.githubusercontent.com/100486080/164539520-1d1070e8-1e22-49fb-83cd-e29a773e0db6.png)
 
-<br><h3> 🤟Another Options in Athena Fruit Markset System -----------------------------------------------------</h3><br>
 
-**Used Languages - Java , CSS , SQL** <br>
+<div align="center">
 
+### (★) ɪꜰ ʏᴏᴜ ʜᴀᴠᴇ ᴀɴʏ ʙᴜɢꜱ ᴏʀ ɪꜱꜱᴜᴇꜱ , ɪꜰ ʏᴏᴜ ᴡᴀɴᴛ ᴛᴏ ᴇxᴘʟᴀɪɴ ᴍʏ ᴄᴏᴅᴇ ᴏʀ ɪꜰ ʏᴏᴜ ɴᴇᴇᴅ ʜᴇʟᴘ ᴛᴏ ᴅᴇᴠᴇʟᴏᴘ ʏᴏᴜʀ ᴘʀᴏᴊᴇᴄᴛꜱ ᴘʟᴇᴀꜱᴇ ᴄᴏɴᴛᴀᴄᴛ ᴍᴇ ᴏɴ (★) 👇<br> <br> <br> mnshgnwardhana622@gmail.com
 
- * Used technology - JDBC <br>
- * User friendly UI design.<br>
- * Special Graphic content available.<br>
- * Validation available in every detail catching form - using Reg x
-  
-If you hava any bugs or issues , If you want to explain my code or if you need help to develop your projects pleace contact me on :point_right: <br> whats app -* 071 9043372  :hugs:
+</div>
 
-<h3> Result in this Project - A <h3/><br>
-   
-                                       😋 If you think my code is good pleace drop a star. 😋
+<br><br>
+<div align="center">
+
+![repo size](https://img.shields.io/github/repo-size/mGunawardhana/POS-System?style=for-the-badge) &nbsp;
+
+![GitHub](https://img.shields.io/github/license/mGunawardhana/POS-System?style=for-the-badge) &nbsp;
+
+![GitHub Forks](https://img.shields.io/github/forks/mGunawardhana/POS-System?&labelColor=black&color=f7b731&style=for-the-badge) &nbsp;
+
+![GitHub Watchers](https://img.shields.io/github/watchers/mGunawardhana/POS-System?style=for-the-badge) &nbsp;
+
+![GitHub Last Commit](https://img.shields.io/github/last-commit/mGunawardhana/POS-System?style=for-the-badge) &nbsp;
+
+![GitHub Star](https://img.shields.io/github/stars/mGunawardhana/POS-System?style=for-the-badge) &nbsp;
+
+</div>
+<br><br>
+
+<div align="center">
+
+## © 2022 ɢᴜɴᴀᴡᴀʀᴅʜᴀɴᴀ,ɪɴᴄ. ᴀʟʟ ʀɪɢʜᴛꜱ ʀᴇꜱᴇʀᴠᴇᴅ.
+
+</div>
+
