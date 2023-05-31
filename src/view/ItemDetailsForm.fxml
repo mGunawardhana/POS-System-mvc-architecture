@@ -35,22 +35,22 @@
             <Image url="@../assets/search.png" />
          </image>
       </ImageView>
-      <Label layoutX="149.0" layoutY="111.0" text="Discription - ">
+      <Label layoutX="128.0" layoutY="111.0" text="Discription - ">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="154.0" layoutY="178.0" text="Unit Price - ">
+      <Label layoutX="139.0" layoutY="178.0" text="Unit Price - ">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="464.0" layoutY="111.0" text="Pack Size - ">
+      <Label layoutX="451.0" layoutY="111.0" text="Pack Size - ">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>
       </Label>
-      <Label layoutX="464.0" layoutY="178.0" text="Qty o Hand -">
+      <Label layoutX="448.0" layoutY="178.0" text="Qty o Hand -">
          <font>
             <Font name="System Bold" size="16.0" />
          </font>

@@ -52,12 +52,12 @@
                         <Image url="@../assets/ic_usr.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="22.0" layoutY="222.0" text="Chartered owner - " textFill="WHITE">
+                  <Label layoutX="95.0" layoutY="216.0" text="Chartered owner - " textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
                   </Label>
-                  <Label layoutX="164.0" layoutY="222.0" prefHeight="25.0" prefWidth="146.0" text="mr. Gunawardhana">
+                  <Label layoutX="89.0" layoutY="238.0" prefHeight="25.0" prefWidth="186.0" text="mr. Gunawardhana">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -68,7 +68,7 @@
                      </font>
                   </JFXButton>
                   <Separator layoutX="22.0" layoutY="453.0" prefHeight="4.0" prefWidth="316.0" />
-                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="142.0" layoutY="474.0" onMouseClicked="#goToGoogle" pickOnBounds="true">
+                  <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="208.0" layoutY="474.0" onMouseClicked="#goToGoogle" pickOnBounds="true">
                      <image>
                         <Image url="@../assets/google.png" />
                      </image>
@@ -78,12 +78,7 @@
                         <Image url="@../assets/facebook.png" />
                      </image>
                   </ImageView>
-                  <Label layoutX="22.0" layoutY="480.0" text="Amazon Fresh" textFill="WHITE">
-                     <font>
-                        <Font name="System Bold" size="16.0" />
-                     </font>
-                  </Label>
-                  <Label layoutX="198.0" layoutY="481.0" prefHeight="25.0" prefWidth="95.0" text="Amazon FB" textFill="WHITE">
+                  <Label layoutX="46.0" layoutY="480.0" text="Amazon Fresh" textFill="WHITE">
                      <font>
                         <Font name="System Bold" size="16.0" />
                      </font>
@@ -113,7 +108,7 @@
                         <Font name="System Bold" size="15.0" />
                      </font>
                   </Label>
-                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="309.0" layoutY="226.0" pickOnBounds="true">
+                  <ImageView fitHeight="18.0" fitWidth="18.0" layoutX="271.0" layoutY="219.0" pickOnBounds="true">
                      <image>
                         <Image url="@assets/check.png" />
                      </image>

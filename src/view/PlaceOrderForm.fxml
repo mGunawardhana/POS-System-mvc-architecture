@@ -110,7 +110,7 @@
             <Insets left="5.0" right="5.0" />
          </padding>
       </JFXButton>
-      <JFXButton buttonType="RAISED" layoutX="635.0" layoutY="548.0" onAction="#ConfirmOrderOnAction" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #7bed9f;" text="Confirm Order">
+      <JFXButton buttonType="RAISED" layoutX="635.0" layoutY="548.0" onAction="#ConfirmOrderOnAction" prefHeight="39.0" prefWidth="145.0" style="-fx-background-color: #7bed9f;" text="Confirm">
          <font>
             <Font name="System Bold" size="18.0" />
          </font>

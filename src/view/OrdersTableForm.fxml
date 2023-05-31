@@ -38,7 +38,7 @@
          </font>
       </Label>
       <TextField fx:id="CustomerSearch" layoutX="26.0" layoutY="63.0" onAction="#save" promptText="Customer Search" />
-      <ImageView fitHeight="26.0" fitWidth="26.0" layoutX="187.0" layoutY="66.0" pickOnBounds="true">
+      <ImageView fitHeight="19.0" fitWidth="21.0" layoutX="173.0" layoutY="67.0" pickOnBounds="true">
          <image>
             <Image url="@../assets/search.png" />
          </image>

@@ -13,9 +13,9 @@
          <children>
             <AnchorPane layoutX="3.0" layoutY="29.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
                <children>
-                  <Button layoutX="90.0" layoutY="8.0" mnemonicParsing="false" onAction="#AddItem" style="-fx-background-color: #13501e;" text="Item Add" textFill="WHITE">
+                  <Button layoutX="95.0" layoutY="13.0" mnemonicParsing="false" onAction="#AddItem" style="-fx-background-color: #13501e;" text="Item Add" textFill="WHITE">
                      <font>
-                        <Font name="System Bold" size="24.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Button>
                   <AnchorPane layoutX="29.0" layoutY="8.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
@@ -31,9 +31,9 @@
             </AnchorPane>
             <AnchorPane fx:id="OrdersAp" layoutX="3.0" layoutY="104.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
                <children>
-                  <Button layoutX="84.0" layoutY="7.0" mnemonicParsing="false" onAction="#EmployeeOnAction" style="-fx-background-color: #13501e;" text="Add Employee" textFill="#f2f2f2">
+                  <Button layoutX="95.0" layoutY="10.0" mnemonicParsing="false" onAction="#EmployeeOnAction" style="-fx-background-color: #13501e;" text="Add Employee" textFill="#f2f2f2">
                      <font>
-                        <Font name="System Bold" size="24.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Button>
                   <AnchorPane layoutX="26.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
@@ -48,9 +48,9 @@
             </AnchorPane>
             <AnchorPane fx:id="OrderDetailsAp" layoutX="3.0" layoutY="178.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
                <children>
-                  <Button layoutX="83.0" layoutY="8.0" mnemonicParsing="false" onAction="#SystemReportOnAction" style="-fx-background-color: #13501e;" text="System Report" textFill="#f2f2f2">
+                  <Button layoutX="86.0" layoutY="11.0" mnemonicParsing="false" onAction="#SystemReportOnAction" style="-fx-background-color: #13501e;" text="System Report" textFill="#f2f2f2">
                      <font>
-                        <Font name="System Bold" size="24.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Button>
                   <AnchorPane layoutX="21.0" layoutY="8.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
@@ -65,9 +65,9 @@
             </AnchorPane>
             <AnchorPane fx:id="PlaceOrderAp" layoutX="3.0" layoutY="253.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
                <children>
-                  <Button layoutX="80.0" layoutY="8.0" mnemonicParsing="false" onAction="#CustomerDetailsOnAction" style="-fx-background-color: #13501e;" text="Customer Details" textFill="#f2f2f2">
+                  <Button layoutX="80.0" layoutY="9.0" mnemonicParsing="false" onAction="#CustomerDetailsOnAction" style="-fx-background-color: #13501e;" text="Customer Details" textFill="#f2f2f2">
                      <font>
-                        <Font name="System Bold" size="22.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Button>
                   <AnchorPane layoutX="20.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
@@ -82,9 +82,9 @@
             </AnchorPane>
             <AnchorPane fx:id="LogOutAp" layoutX="3.0" layoutY="484.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
                <children>
-                  <Button layoutX="87.0" layoutY="9.0" mnemonicParsing="false" onAction="#LogOutOnAction" style="-fx-background-color: #13501e;" text="LogOut" textFill="#f2f2f2">
+                  <Button layoutX="88.0" layoutY="9.0" mnemonicParsing="false" onAction="#LogOutOnAction" style="-fx-background-color: #13501e;" text="LogOut" textFill="#f2f2f2">
                      <font>
-                        <Font name="System Bold" size="22.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Button>
                   <AnchorPane layoutX="23.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
@@ -100,9 +100,9 @@
             </AnchorPane>
             <AnchorPane fx:id="PlaceOrderAp1" layoutX="3.0" layoutY="333.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
                <children>
-                  <Button layoutX="85.0" layoutY="8.0" mnemonicParsing="false" onAction="#itemDetailsFormOnAction" style="-fx-background-color: #13501e;" text="Item Details" textFill="#f2f2f2">
+                  <Button layoutX="84.0" layoutY="12.0" mnemonicParsing="false" onAction="#itemDetailsFormOnAction" style="-fx-background-color: #13501e;" text="Item Details" textFill="#f2f2f2">
                      <font>
-                        <Font name="System Bold" size="22.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Button>
                   <AnchorPane layoutX="20.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">
@@ -117,9 +117,9 @@
             </AnchorPane>
             <AnchorPane fx:id="PlaceOrderAp11" layoutX="3.0" layoutY="409.0" onMouseEntered="#playMouseEnterAnimation" onMouseExited="#playMouseExitedAnimation" prefHeight="64.0" prefWidth="294.0" style="-fx-background-color: #13501e; -fx-background-radius: 10;">
                <children>
-                  <Button layoutX="84.0" layoutY="7.0" mnemonicParsing="false" onAction="#OrderItemDetailOnAction" style="-fx-background-color: #13501e;" text="Order Details" textFill="#f2f2f2">
+                  <Button layoutX="83.0" layoutY="11.0" mnemonicParsing="false" onAction="#OrderItemDetailOnAction" style="-fx-background-color: #13501e;" text="Order Details" textFill="#f2f2f2">
                      <font>
-                        <Font name="System Bold" size="24.0" />
+                        <Font name="System Bold" size="20.0" />
                      </font>
                   </Button>
                   <AnchorPane layoutX="20.0" layoutY="7.0" prefHeight="50.0" prefWidth="50.0" style="-fx-background-color: #ffffff; -fx-background-radius: 30;">

@@ -30,7 +30,7 @@
       </Label>
       <Separator layoutX="302.0" layoutY="44.0" prefHeight="5.0" prefWidth="204.0" />
       <TextField fx:id="SearchId" layoutX="14.0" layoutY="50.0" onAction="#save" promptText="Search Id" style="-fx-background-radius: 10;" />
-      <ImageView fitHeight="25.0" fitWidth="25.0" layoutX="167.0" layoutY="53.0" pickOnBounds="true">
+      <ImageView fitHeight="20.0" fitWidth="17.0" layoutX="161.0" layoutY="54.0" pickOnBounds="true">
          <image>
             <Image url="@../assets/search.png" />
          </image>
