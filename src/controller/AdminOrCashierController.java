@@ -80,7 +80,7 @@ public class AdminOrCashierController {
         } catch (SQLException | ClassNotFoundException ignored) {
         }
 
-        String query = "SELECT * FROM cashier";
+        String query = "SELECT * FROM Cashier";
         PreparedStatement stm = con.prepareStatement(query);
 
         String CashierID = CashierUserNameTxt.getText();

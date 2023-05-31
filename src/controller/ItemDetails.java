@@ -8,7 +8,7 @@ import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
-import model.item;
+import model.Item;
 import util.CrudUtil;
 
 import java.sql.ResultSet;
@@ -21,7 +21,7 @@ public class ItemDetails {
     public TextField Description;
     public TextField PackSize;
 
-    public TableView<item> FullTableStore;
+    public TableView<Item> FullTableStore;
     public TableColumn ItemTableColStore;
     public TableColumn DescriptionColStore;
     public TableColumn PackSizeColStore;
@@ -50,12 +50,12 @@ public class ItemDetails {
     private void loadAllItems() throws SQLException, ClassNotFoundException {
 
         ResultSet result = CrudUtil.execute("SELECT * FROM Item");
-        ObservableList<item> obList = FXCollections.observableArrayList();
+        ObservableList<Item> obList = FXCollections.observableArrayList();
 
 
         while (result.next()) {
             obList.add(
-                    new item(
+                    new Item(
                             result.getString("ItemCode"),
                             result.getString("Description"),
                             result.getString("PackSize"),

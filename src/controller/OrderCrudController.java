@@ -32,7 +32,7 @@ public class OrderCrudController {
     }
 
     private boolean updateQty(String itemCode, int qty) throws SQLException, ClassNotFoundException {
-        return CrudUtil.execute("UPDATE ITEM SET QtyOnHand=QtyOnHand-? WHERE ItemCode = ?", qty, itemCode);
+        return CrudUtil.execute("UPDATE Item SET QtyOnHand=QtyOnHand-? WHERE ItemCode = ?", qty, itemCode);
     }
 
     public String getOrderId() throws SQLException, ClassNotFoundException {

@@ -36,7 +36,7 @@ public class UILoader {
          window.setScene(new Scene(load));
          */
         Stage window = (Stage) MainContext.getScene().getWindow();
-        window.setScene(new Scene(FXMLLoader.load(UILoader.class.getResource("../View/" + path + ".fxml"))));
+        window.setScene(new Scene(FXMLLoader.load(UILoader.class.getResource("../view/" + path + ".fxml"))));
     }
 
     public static void SetUiCloseUnderTheAnchorpane(String Owner, AnchorPane FirstPageAnchorPaneContext) throws IOException {

@@ -19,7 +19,7 @@ import javafx.util.Duration;
 import model.Order;
 import model.OrderDetails;
 import model.customer;
-import model.item;
+import model.Item;
 import net.sf.jasperreports.engine.JRException;
 import net.sf.jasperreports.engine.JasperFillManager;
 import net.sf.jasperreports.engine.JasperPrint;
@@ -144,7 +144,7 @@ public class PlaceOrderFormController {
 
     public void setItemDetails(String selectedItemCode) {
         try {
-            item i = ItemCrudController.getItem(selectedItemCode);
+            Item i = ItemCrudController.getItem(selectedItemCode);
             if (i != null) {
                 DescriptionTxt.setText(i.getDiscription());
                 QtyOnHandTxt.setText(String.valueOf((i.getQtyOnHand())));
@@ -351,6 +351,62 @@ public class PlaceOrderFormController {
         }
         setOrderId();
     }
+
+//    public void ConfirmOrderOnAction(ActionEvent actionEvent) {
+//        ArrayList<OrderDetails> details = new ArrayList<>();
+//        for (CartTM tm : tmList) {
+//            details.add(
+//                    new OrderDetails(
+//                            tm.getOrderId(),
+//                            tm.getItemCode(),
+//                            tm.getQty(),
+//                            tm.getDiscount(),
+//                            tm.getTotal()
+//                    )
+//            );
+//        }
+//
+//        Order order = new Order(
+//                OrderID.getText(),
+//                CustomerIDCombo.getValue(),
+//                DateLbl.getText(),
+//                TimeLbl.getText()
+//        );
+//
+//        Connection connection = null;
+//        try {
+//            connection = DBConnection.getInstance().getConnection();
+//            connection.setAutoCommit(false);
+//            OrderCrudController orderCrudController = new OrderCrudController();
+//            boolean isOrderSaved = orderCrudController.saveOrder(order);
+//            if (isOrderSaved) {
+//                boolean isDetailsSaved = orderCrudController.saveOrderDetails(details);
+//                if (isDetailsSaved) {
+//                    connection.commit();
+//                    NotificationController.SuccessfulTableNotification("Order Placed", "Order");
+//                } else {
+//                    connection.rollback();
+//                    NotificationController.UnSuccessfulTableNotification("Order Place", "Order");
+//                }
+//            } else {
+//                connection.rollback();
+//                NotificationController.UnSuccessfulTableNotification("Order Place", "Order");
+//            }
+//        } catch (SQLException | ClassNotFoundException e) {
+//            e.printStackTrace();
+//        } finally {
+//            try {
+//                if (connection != null) {
+//                    connection.setAutoCommit(true);
+//                    connection.close();
+//                }
+//            } catch (SQLException e) {
+//                e.printStackTrace();
+//            }
+//        }
+//        setOrderId();
+//    }
+
 
     public void ClearOrderOnAction(ActionEvent actionEvent) {
         tmList.clear();

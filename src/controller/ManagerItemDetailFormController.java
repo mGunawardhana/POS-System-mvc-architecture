@@ -12,7 +12,7 @@ import javafx.scene.input.KeyCode;
 import javafx.scene.input.KeyEvent;
 import javafx.scene.layout.AnchorPane;
 import javafx.util.Duration;
-import model.item;
+import model.Item;
 import util.CrudUtil;
 import util.validationUtil;
 
@@ -32,7 +32,7 @@ public class ManagerItemDetailFormController {
     public TextField Description;
     public TextField UnitPrice;
 
-    public TableView<item> FullTable;
+    public TableView<Item> FullTable;
     public TableColumn ItemTableCol;
     public TableColumn DescriptionCol;
     public TableColumn PackSizeCol;
@@ -124,11 +124,11 @@ public class ManagerItemDetailFormController {
     private void loadAllItems() throws SQLException, ClassNotFoundException {
 
         ResultSet result = CrudUtil.execute("SELECT * FROM Item");
-        ObservableList<item> obList = FXCollections.observableArrayList();
+        ObservableList<Item> obList = FXCollections.observableArrayList();
 
         while (result.next()) {
             obList.add(
-                    new item(
+                    new Item(
                             result.getString("ItemCode"),
                             result.getString("Description"),
                             result.getString("PackSize"),
@@ -145,7 +145,7 @@ public class ManagerItemDetailFormController {
 
     public void SaveBtnOnAction() {
 
-        item newItem = new item(
+        Item newItem = new Item(
                 ItemCode.getText(),
                 Description.getText(),
                 Size.getText(),
@@ -221,7 +221,7 @@ public class ManagerItemDetailFormController {
     /*- UPDATE ITEM DETAILS IN TABLE -*/
 
     public void UpdateButtonOnAction(ActionEvent actionEvent) {
-        item ITEMS = new item(
+        Item ITEMS = new Item(
                 ItemCode.getText(),
                 Description.getText(),
                 Size.getText(),
