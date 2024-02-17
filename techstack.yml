@@ -1,0 +1,53 @@
+repo_name: mGunawardhana/POS-System-mvc-architecture
+report_id: da0ecc3637ed2ef67cdb27d85b6373e7
+version: 0.1
+repo_type: Public
+timestamp: '2024-02-17T14:04:07+00:00'
+requested_by: mGunawardhana
+provider: github
+branch: master
+detected_tools_count: 4
+tools:
+- name: CSS 3
+  description: The latest evolution of the Cascading Style Sheets language
+  website_url: https://developer.mozilla.org/en-US/docs/Web/CSS/CSS3
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/6727/css.png
+  detection_source_url: https://github.com/mGunawardhana/POS-System-mvc-architecture
+  detection_source: Repo Metadata
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/mGunawardhana/POS-System-mvc-architecture
+  detection_source: Repo Metadata
+- name: SQL
+  description: It is a domain-specific language used in programming
+  website_url: https://en.wikipedia.org/wiki/SQL
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/2271/default_068d33483bba6b81ee13fbd4dc7aab9780896a54.png
+  detection_source_url: https://github.com/mGunawardhana/POS-System-mvc-architecture/blob/master/out/production/FruitMarket/SQL.sql
+  detection_source: out/production/FruitMarket/SQL.sql
+  last_updated_by: mGunawardhana
+  last_updated_on: 2022-04-21 18:42:01.000000000 Z
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/mGunawardhana/POS-System-mvc-architecture
+  detection_source: Repo Metadata
